@@ -1,0 +1,361 @@
+{
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+		{
+			"path": "pages/index/index",
+			"style": {}
+		}, {
+			"path": "pages/search/search",
+			"style": {}
+		}, {
+			"path": "pages/goodsdetail/goodsdetail",
+			"style": {}
+		}, {
+			"path": "pages/find/my",
+			"style": {}
+		}, {
+			"path": "pages/find/userlist",
+			"style": {}
+		}, {
+			"path": "pages/find/detail",
+			"style": {}
+		}, {
+			"path": "pages/textEdit/textEdit",
+			"style": {}
+		}, {
+			"path": "pages/notice/notice",
+			"style": {}
+		}, {
+			"path": "pages/sort/sort",
+			"style": {}
+		}, {
+			"path": "pages/find/add",
+			"style": {}
+		}, {
+			"path": "pages/goodsdetail/comment",
+			"style": {}
+		}, {
+			"path": "pages/order/list",
+			"style": {}
+		}, {
+			"path": "pages/order/detail",
+			"style": {}
+		}, {
+			"path": "pages/sign/sign",
+			"style": {}
+		}, {
+			"path": "pages/wallet/wallet",
+			"style": {}
+		}, {
+			"path": "pages/wallet/payment",
+			"style": {}
+		}, {
+			"path": "pages/wallet/cashOut",
+			"style": {}
+		}, {
+			"path": "pages/wallet/detail",
+			"style": {}
+		}, {
+			"path": "pages/footprint/footprint",
+			"style": {}
+		}, {
+			"path": "pages/coupon/coupon",
+			"style": {}
+		}, {
+			"path": "pages/share/share",
+			"style": {}
+		}, {
+			"path": "pages/fans/fans",
+			"style": {}
+		}, {
+			"path": "pages/address/address",
+			"style": {}
+		}, {
+			"path": "pages/address/edit",
+			"style": {}
+		}, {
+			"path": "pages/collect/collect",
+			"style": {}
+		}, {
+			"path": "pages/about/about",
+			"style": {}
+		}, {
+			"path": "pages/help/help",
+			"style": {}
+		}, {
+			"path": "pages/set/set",
+			"style": {}
+		}, {
+			"path": "pages/vipGoods/vipGoods",
+			"style": {}
+		}, {
+			"path": "pages/newGoods/newGoods",
+			"style": {}
+		}, {
+			"path": "pages/seckill/seckill",
+			"style": {}
+		}, {
+			"path": "pages/goodsList/goodsList",
+			"style": {}
+		}, {
+			"path": "pages/shop/order",
+			"style": {}
+		}, {
+			"path": "pages/shop/detailCenter",
+			"style": {}
+		}, {
+			"path": "pages/shop/skill/sucai",
+			"style": {}
+		}, {
+			"path": "pages/shop/store",
+			"style": {}
+		}, {
+			"path": "pages/shop/income",
+			"style": {}
+		}, {
+			"path": "pages/shop/rankList",
+			"style": {}
+		}, {
+			"path": "pages/shop/skill/skill",
+			"style": {}
+		}, {
+			"path": "pages/shop/skill/goods",
+			"style": {}
+		}, {
+			"path": "pages/shop/skill/addGoods",
+			"style": {}
+		}, {
+			"path": "pages/comingsoon/comingsoon",
+			"style": {}
+		}, {
+			"path": "pages/invita/invita",
+			"style": {}
+		}, {
+			"path": "pages/set/PersonalData",
+			"style": {}
+		}, {
+			"path": "pages/set/notice",
+			"style": {}
+		}, {
+			"path": "pages/set/password",
+			"style": {}
+		}, {
+			"path": "pages/feedback/feedback",
+			"style": {}
+		}
+	],
+	"globalStyle": {
+		"mp-alipay": {
+			/* 支付宝小程序特有相关 */
+			"transparentTitle": "always",
+			"allowsBounceVertical": "NO"
+		},
+		"navigationBarBackgroundColor": "#0081ff",
+		"navigationBarTitleText": "QhShop",
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "black"
+	},
+	"usingComponts": true,
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "------首页------", //模式名称
+			"path": "pages/index/index", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "消息中心", //模式名称
+			"path": "pages/notice/notice", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "搜索页", //模式名称
+			"path": "pages/search/search", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "全部分类", //模式名称
+			"path": "pages/sort/sort", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "商品筛选", //模式名称
+			"path": "pages/goodsList/goodsList", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "商品详情页", //模式名称
+			"path": "pages/goodsdetail/goodsdetail", //启动页面
+			"query": "id=0" //启动参数
+		}, {
+			"name": "每日新品", //模式名称
+			"path": "pages/newGoods/newGoods", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "会员专享", //模式名称
+			"path": "pages/vipGoods/vipGoods", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "秒杀专场", //模式名称
+			"path": "pages/seckill/seckill", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "------发现------", //模式名称
+			"path": "pages/index/index", //启动页面
+			"query": "cur=find" //启动参数
+		}, {
+			"name": "发现-个人中心", //模式名称
+			"path": "pages/find/my", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "发现-关注列表", //模式名称
+			"path": "pages/find/userlist", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "发现-发布动态", //模式名称
+			"path": "pages/find/add", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "发现-动态详情", //模式名称
+			"path": "pages/find/detail", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "------升级云店------", //模式名称
+			"path": "pages/index/index", //启动页面
+			"query": "cur=earn" //启动参数
+		}, {
+			"name": "我的云店", //模式名称
+			"path": "pages/index/index", //启动页面
+			"query": "cur=shop" //启动参数
+		}, {
+			"name": "赚钱技能", //模式名称
+			"path": "pages/shop/skill/skill", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "我的商品", //模式名称
+			"path": "pages/shop/skill/goods", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "添加商品", //模式名称
+			"path": "pages/shop/skill/addGoods", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "素材库", //模式名称
+			"path": "pages/shop/skill/sucai", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "订单奖励", //模式名称
+			"path": "pages/shop/order", //启动页面
+			"query": "cur=0" //启动参数
+		}, {
+			"name": "数据中心", //模式名称
+			"path": "pages/shop/detailCenter", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "我的分店", //模式名称
+			"path": "pages/shop/store", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "我的收入", //模式名称
+			"path": "pages/shop/income", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "新人排行", //模式名称
+			"path": "pages/shop/rankList", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "------购物车------", //模式名称
+			"path": "pages/index/index", //启动页面
+			"query": "cur=cart" //启动参数
+		}, {
+			"name": "------我的------", //模式名称
+			"path": "pages/index/index", //启动页面
+			"query": "cur=my" //启动参数
+		}, {
+			"name": "设置", //模式名称
+			"path": "pages/set/set", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "设置-个人信息", //模式名称
+			"path": "pages/set/PersonalData", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "设置-消息提醒", //模式名称
+			"path": "pages/set/notice", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "设置-修改登录密码", //模式名称
+			"path": "pages/set/password", //启动页面
+			"query": "type=login" //启动参数
+		}, {
+			"name": "设置-修改支付密码", //模式名称
+			"path": "pages/set/password", //启动页面
+			"query": "type=pay" //启动参数
+		}, {
+			"name": "意见反馈", //模式名称
+			"path": "pages/feedback/feedback", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "签到", //模式名称
+			"path": "pages/sign/sign", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "钱包", //模式名称
+			"path": "pages/wallet/wallet", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "钱包-转账", //模式名称
+			"path": "pages/wallet/payment", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "钱包-提现", //模式名称
+			"path": "pages/wallet/cashOut", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "钱包-明细", //模式名称
+			"path": "pages/wallet/detail", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "足迹", //模式名称
+			"path": "pages/footprint/footprint", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "我的订单", //模式名称
+			"path": "pages/order/list", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "我的订单-详情", //模式名称
+			"path": "pages/order/detail", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "优惠券", //模式名称
+			"path": "pages/coupon/coupon", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "邀请有奖", //模式名称
+			"path": "pages/invita/invita", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "我的粉丝", //模式名称
+			"path": "pages/fans/fans", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "收货地址", //模式名称
+			"path": "pages/address/address", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "我的收藏", //模式名称
+			"path": "pages/collect/collect", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "意见反馈", //模式名称
+			"path": "pages/share/share", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "在线帮助", //模式名称
+			"path": "pages/help/help", //启动页面
+			"query": "" //启动参数
+		}, {
+			"name": "关于我们", //模式名称
+			"path": "pages/about/help", //启动页面
+			"query": "" //启动参数
+		}]
+	}
+
+}
